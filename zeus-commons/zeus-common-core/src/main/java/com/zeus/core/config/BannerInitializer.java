@@ -19,8 +19,8 @@ public class BannerInitializer implements ApplicationContextInitializer<Configur
         if (!(applicationContext instanceof AnnotationConfigApplicationContext)) {
             LogoBanner logoBanner = new LogoBanner(BannerInitializer.class, "/banner/logo.txt", "Welcome to cmdi", 1, 6, new Color[5], true);
             CustomBanner.show(logoBanner, new Description(BannerConstant.VERSION + ":", CommonConstant.PROJECT_VERSION, 0, 1)
-                    , new Description("cmdi:", "中国移动设计院浙江分院开发组", 0, 1)
-                    , new Description("Info:", "http://www.cmdi.chinamobile.com/", 0, 1)
+                    , new Description("wyz:", "追求技术的菜鸡", 0, 1)
+                    , new Description("github:", "https://github.com/hduwyz/zeus", 0, 1)
             );
         }
     }
