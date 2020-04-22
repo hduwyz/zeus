@@ -10,11 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.wyz.zeus</groupId>
-    <artifactId>zeus-business</artifactId>
+    <artifactId>zeus-uaa</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>file-center</module>
-        <module>code-generator</module>
+        <module>zeus-uaa-shiro</module>
     </modules>
 
 
