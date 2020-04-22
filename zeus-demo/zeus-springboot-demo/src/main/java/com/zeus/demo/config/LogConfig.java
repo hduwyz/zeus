@@ -30,7 +30,6 @@ public class LogConfig {
         registration.setOrder(1);
         registration.addUrlPatterns("/*");
         registration.setFilter(new ZeusLogFilter());
-
         return registration;
     }
 }
