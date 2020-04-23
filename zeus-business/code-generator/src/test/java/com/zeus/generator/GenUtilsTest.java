@@ -2,7 +2,7 @@ package com.zeus.generator;
 
 import com.zeus.generator.utils.GenUtils;
 import org.assertj.core.api.Assertions;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 /**

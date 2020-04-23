@@ -15,6 +15,7 @@
     <modules>
         <module>zeus-common-core</module>
         <module>shiro-zeus-springboot-starter</module>
+        <module>zeus-db</module>
     </modules>
 
 
