@@ -13,10 +13,10 @@
     <artifactId>code-generator</artifactId>
 
     <dependencies>
-        <dependency>
-            <groupId>com.cmdi.zeus</groupId>
-            <artifactId>zeus-common-core</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.cmdi.zeus</groupId>-->
+<!--            <artifactId>zeus-common-core</artifactId>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -33,10 +33,6 @@
         <dependency>
             <groupId>commons-configuration</groupId>
             <artifactId>commons-configuration</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.velocity</groupId>

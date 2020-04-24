@@ -2,8 +2,8 @@ package com.zeus.uaa.common.filter;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.zeus.uaa.common.constant.Constants;
-import com.zeus.uaa.model.SysUser;
-import com.zeus.uaa.service.ISysUserService;
+import com.zeus.uaa.entity.User;
+import com.zeus.uaa.service.IUserService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.web.filter.PathMatchingFilter;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,14 +14,14 @@ import javax.servlet.ServletResponse;
 public class SysUserFilter extends PathMatchingFilter {
 
     @Autowired
-    private ISysUserService userService;
+    private IUserService userService;
 
     @Override
     protected boolean onPreHandle(ServletRequest request, ServletResponse response, Object mappedValue) throws Exception {
 
         String username = (String)SecurityUtils.getSubject().getPrincipal();
         QueryWrapper queryWrapper = new QueryWrapper();
-        SysUser sysUser = new SysUser();
+        User sysUser = new User();
         sysUser.setUsername(username);
         queryWrapper.setEntity(sysUser);
         request.setAttribute(Constants.CURRENT_USER, userService.getOne(queryWrapper));

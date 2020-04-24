@@ -38,7 +38,7 @@ public class GenerateCodeBuilder {
     @Test
     public void generateCodeBuilder() {
         boolean serviceNameStartWithI = true;
-        generateByTables(serviceNameStartWithI, packageName, "sessions", "sys_app", "sys_organization", "sys_resource", "sys_role", "sys_user", "sys_user_app_roles");
+        generateByTables(serviceNameStartWithI, packageName, "permission", "role", "role_permission", "user", "user_role");
     }
 
     private void generateByTables(boolean serviceNameStartWithI, String packageName, String... tableNames) {

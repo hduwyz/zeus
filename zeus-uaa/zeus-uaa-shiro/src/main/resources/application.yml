@@ -1,6 +1,8 @@
 spring:
+  application:
+    name: zeus-uaa
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/oauth-center?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://127.0.0.1:3306/shiro?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -12,3 +14,7 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: auto
+
+#uaa使用端口
+server:
+  port: 8762
