@@ -2,9 +2,9 @@ spring:
   application:
     name: zeus-uaa
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/shiro?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
-    username: root
-    password: root
+    url: jdbc:mysql://${wyz.datasource.ip}:3306/shiro?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
+    username: ${wyz.datasource.username}
+    password: ${wyz.datasource.password}
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 mybatis-plus:
