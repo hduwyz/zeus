@@ -1,11 +1,11 @@
-#spring:
-#  datasource:
-#    url: jdbc:mysql://${wyz.datasource.ip}:3306/shiro?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
-#    username: ${wyz.datasource.username}
-#    password: ${wyz.datasource.password}
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-#
-#mybatis-plus:
-#  mapper-locations: classpath:/mapper/*Mapper.xml
-#  #实体扫描，多个package用逗号或者分号分隔
-#  typeAliasesPackage: com.zeus.generator.model
+spring:
+  datasource:
+    url: jdbc:mysql://${wyz.datasource.ip}:3306/shiro?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
+    username: ${wyz.datasource.username}
+    password: ${wyz.datasource.password}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  #实体扫描，多个package用逗号或者分号分隔
+  typeAliasesPackage: com.zeus.generator.model
