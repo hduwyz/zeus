@@ -1,7 +1,7 @@
 package com.zeus.uaa.controller;
 
 
-import com.zeus.uaa.biz.ShiroService;
+import com.zeus.uaa.service.impl.ShiroService;
 import com.zeus.uaa.entity.Permission;
 import com.zeus.uaa.service.IPermissionService;
 import org.springframework.beans.factory.annotation.Autowired;

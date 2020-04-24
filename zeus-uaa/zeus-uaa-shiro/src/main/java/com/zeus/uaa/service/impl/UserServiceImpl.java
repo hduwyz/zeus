@@ -1,7 +1,7 @@
 package com.zeus.uaa.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.zeus.uaa.biz.PasswordHelper;
+import com.zeus.uaa.utils.PasswordHelper;
 import com.zeus.uaa.entity.Permission;
 import com.zeus.uaa.entity.Role;
 import com.zeus.uaa.entity.User;

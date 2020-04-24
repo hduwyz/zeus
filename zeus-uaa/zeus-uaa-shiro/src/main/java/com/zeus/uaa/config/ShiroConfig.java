@@ -1,7 +1,7 @@
 package com.zeus.uaa.config;
 
 
-import com.zeus.uaa.biz.MyShiroRealm;
+import com.zeus.uaa.common.realm.MyShiroRealm;
 import com.zeus.uaa.common.filter.KickoutSessionControlFilter;
 import com.zeus.uaa.entity.Permission;
 import com.zeus.uaa.service.IPermissionService;

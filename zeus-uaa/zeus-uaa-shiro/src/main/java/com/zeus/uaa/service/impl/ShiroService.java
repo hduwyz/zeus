@@ -1,4 +1,4 @@
-package com.zeus.uaa.biz;
+package com.zeus.uaa.service.impl;
 
 import com.zeus.uaa.entity.Permission;
 import com.zeus.uaa.service.IPermissionService;

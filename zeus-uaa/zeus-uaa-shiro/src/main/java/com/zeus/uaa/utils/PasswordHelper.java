@@ -1,4 +1,4 @@
-package com.zeus.uaa.biz;
+package com.zeus.uaa.utils;
 
 import com.zeus.uaa.entity.User;
 import org.apache.shiro.crypto.RandomNumberGenerator;

@@ -1,4 +1,4 @@
-package com.zeus.uaa.biz;
+package com.zeus.uaa.common.realm;
 
 import com.zeus.uaa.entity.Permission;
 import com.zeus.uaa.entity.Role;
