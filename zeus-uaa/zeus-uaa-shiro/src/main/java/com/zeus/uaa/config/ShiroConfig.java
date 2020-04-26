@@ -51,6 +51,9 @@ public class ShiroConfig {
     @Value("${spring.redis.port}")
     private int port;
 
+    @Value("${spring.redis.password}")
+    private String password;
+
     @Bean
     public ShiroFilterFactoryBean shiroFilter(SecurityManager securityManager){
         ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
@@ -147,9 +150,9 @@ public class ShiroConfig {
         RedisManager redisManager = new RedisManager();
         redisManager.setHost(host);
         redisManager.setPort(port);
+        redisManager.setPassword(password);
         // 配置过期时间
         redisManager.setTimeout(2000);
-        // redisManager.setPassword(password);
         return redisManager;
     }
     /**

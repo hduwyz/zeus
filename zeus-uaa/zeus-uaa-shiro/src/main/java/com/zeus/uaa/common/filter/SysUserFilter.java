@@ -1,7 +1,7 @@
 package com.zeus.uaa.common.filter;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.zeus.uaa.common.constant.Constants;
+import com.zeus.core.constant.CommonConstant;
 import com.zeus.uaa.entity.User;
 import com.zeus.uaa.service.IUserService;
 import org.apache.shiro.SecurityUtils;
@@ -24,7 +24,7 @@ public class SysUserFilter extends PathMatchingFilter {
         User sysUser = new User();
         sysUser.setUsername(username);
         queryWrapper.setEntity(sysUser);
-        request.setAttribute(Constants.CURRENT_USER, userService.getOne(queryWrapper));
+        request.setAttribute(CommonConstant.CURRENT_USER, userService.getOne(queryWrapper));
         return true;
     }
 }

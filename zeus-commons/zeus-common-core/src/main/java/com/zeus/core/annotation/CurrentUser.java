@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.zeus.uaa.common.bind.annotation;
+package com.zeus.core.annotation;
 
-import com.zeus.uaa.common.constant.Constants;
+import com.zeus.core.constant.CommonConstant;
 
 import java.lang.annotation.*;
 
@@ -30,6 +30,6 @@ public @interface CurrentUser {
      *
      * @return
      */
-    String value() default Constants.CURRENT_USER;
+    String value() default CommonConstant.CURRENT_USER;
 
 }

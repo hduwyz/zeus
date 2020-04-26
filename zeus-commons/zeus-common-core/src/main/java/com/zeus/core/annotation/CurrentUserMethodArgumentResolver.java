@@ -1,6 +1,5 @@
-package com.zeus.uaa.common.bind.method;
+package com.zeus.core.annotation;
 
-import com.zeus.uaa.common.bind.annotation.CurrentUser;
 import org.springframework.core.MethodParameter;
 import org.springframework.web.bind.support.WebDataBinderFactory;
 import org.springframework.web.context.request.NativeWebRequest;

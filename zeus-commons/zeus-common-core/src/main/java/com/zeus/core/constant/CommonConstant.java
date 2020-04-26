@@ -26,4 +26,6 @@ public interface CommonConstant {
      * 正常
      */
     Integer STATUS_NORMAL = 0;
+
+    public static final String CURRENT_USER = "user";
 }

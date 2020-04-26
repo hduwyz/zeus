@@ -13,6 +13,7 @@ import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.CollectionUtils;
 
 
 import java.util.Date;
@@ -132,6 +133,9 @@ public class MyShiroRealm extends AuthorizingRealm {
         Integer userId = user.getId();
         //获取角色并添加
         List<Role> roleList = roleService.findByUserId(userId);
+        if(CollectionUtils.isEmpty(roleList)){
+            return authorizationInfo;
+        }
         Set<String> roleSet = new HashSet<String>();
         for(Role role : roleList){
             roleSet.add(role.getRole());
@@ -139,6 +143,9 @@ public class MyShiroRealm extends AuthorizingRealm {
         authorizationInfo.setRoles(roleSet);
         //获取权限并添加
         List<Permission> permissionList = permissionService.findByRoles(roleList);
+        if(CollectionUtils.isEmpty(permissionList)){
+            return authorizationInfo;
+        }
         Set<String> permissionSet = new HashSet<String>();
         for(Permission permission : permissionList){
             String perms = permission.getPermission().toString();
