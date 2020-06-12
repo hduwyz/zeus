@@ -15,6 +15,7 @@
     <modules>
         <module>zeus-springboot-demo</module>
         <module>shiro-demo</module>
+        <module>security-demo</module>
     </modules>
 
 </project>
