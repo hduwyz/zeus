@@ -44,6 +44,7 @@
         <fastdfs-client.version>1.26.7</fastdfs-client.version>
         <shiro.redis.version>3.1.0</shiro.redis.version>
         <hutool.version>5.3.8</hutool.version>
+        <redisson-starter.version>3.11.5</redisson-starter.version>
         <security-oauth2.version>2.3.8.RELEASE</security-oauth2.version>
         <spring-social-security.version>1.1.6.RELEASE</spring-social-security.version>
         <spring-cloud-dependencies.version>Hoxton.SR3</spring-cloud-dependencies.version>
@@ -227,6 +228,12 @@
                 <groupId>org.springframework.social</groupId>
                 <artifactId>spring-social-security</artifactId>
                 <version>${spring-social-security.version}</version>
+            </dependency>
+            <!-- 在Redis基础上的一个Java实用工具包 -->
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-boot-starter</artifactId>
+                <version>${redisson-starter.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
