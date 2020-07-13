@@ -1,0 +1,8 @@
+org.springframework.context.ApplicationContextInitializer=\
+com.zeus.log.config.TtlMDCAdapterInitializer
+
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.zeus.log.config.LogAutoConfigure,\
+com.zeus.log.service.impl.LoggerAuditServiceImpl,\
+com.zeus.log.service.impl.DbAuditServiceImpl,\
+com.zeus.log.aspect.AuditLogAspect

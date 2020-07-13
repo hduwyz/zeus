@@ -2,9 +2,6 @@ package com.zeus.core.constant;
 
 /**
  * 全局公共常量
- *
- * @author zlt
- * @date 2018/10/29
  */
 public interface CommonConstant {
     /**

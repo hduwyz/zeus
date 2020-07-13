@@ -8,9 +8,6 @@ import lombok.EqualsAndHashCode;
 import java.util.List;
 import java.util.Set;
 
-/**
- * @author zlt
- */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @TableName("sys_menu")

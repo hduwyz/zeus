@@ -1,7 +1,7 @@
 package com.zeus.generator.utils;
 
+import cn.hutool.core.date.DateUtil;
 import com.zeus.core.constant.CommonConstant;
-import com.zeus.core.utils.DateUtil;
 import com.zeus.generator.model.ColumnEntity;
 import com.zeus.generator.model.TableEntity;
 import lombok.extern.slf4j.Slf4j;

@@ -1,2 +1,6 @@
 org.springframework.context.ApplicationContextInitializer=\
 com.zeus.core.config.BannerInitializer
+
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.zeus.core.feign.fallback.UserServiceFallbackFactory,\
+com.zeus.core.lock.LockAspect

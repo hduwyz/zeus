@@ -3,7 +3,6 @@ package com.zeus.core.constant;
 /**
  * Security 权限常量
  *
- * @author zlt
  */
 public interface SecurityConstants {
     /**
