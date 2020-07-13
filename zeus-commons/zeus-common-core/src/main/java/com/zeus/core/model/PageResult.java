@@ -8,13 +8,16 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * 分页实体类
+ *
+ */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class PageResult<T> implements Serializable {
-
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = -275582248840137389L;
     /**
      * 总数
      */

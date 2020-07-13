@@ -13,7 +13,6 @@
     <artifactId>zeus-uaa</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>zeus-uaa-shiro</module>
         <module>uaa-center</module>
     </modules>
 
