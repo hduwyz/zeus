@@ -15,6 +15,7 @@
     <modules>
         <module>file-center</module>
         <module>code-generator</module>
+        <module>user-center</module>
     </modules>
 
 

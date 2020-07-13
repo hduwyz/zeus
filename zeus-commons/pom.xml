@@ -14,10 +14,10 @@
     <packaging>pom</packaging>
     <modules>
         <module>zeus-common-core</module>
-        <module>zeus-db</module>
         <module>zeus-common-spring-boot-starter</module>
         <module>zeus-log-spring-boot-starter</module>
         <module>zeus-redis-spring-boot-starter</module>
+        <module>zeus-db-spring-boot-starter</module>
     </modules>
 
 

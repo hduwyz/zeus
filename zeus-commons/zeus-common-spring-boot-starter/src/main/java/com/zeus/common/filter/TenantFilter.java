@@ -1,9 +1,9 @@
 package com.zeus.common.filter;
 
 import cn.hutool.core.util.StrUtil;
-import com.central.common.constant.CommonConstant;
-import com.central.common.constant.SecurityConstants;
-import com.central.common.context.TenantContextHolder;
+import com.zeus.core.constant.CommonConstant;
+import com.zeus.core.constant.SecurityConstants;
+import com.zeus.core.context.TenantContextHolder;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.web.filter.OncePerRequestFilter;
 
@@ -16,9 +16,6 @@ import java.io.IOException;
 
 /**
  * 租户过滤器
- *
- * @author zlt
- * @date 2019/9/15
  */
 @ConditionalOnClass(Filter.class)
 public class TenantFilter extends OncePerRequestFilter {

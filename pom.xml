@@ -46,6 +46,7 @@
         <hutool.version>5.3.8</hutool.version>
         <redisson-starter.version>3.11.5</redisson-starter.version>
         <security-oauth2.version>2.3.8.RELEASE</security-oauth2.version>
+        <commons-configuration2.version>2.7</commons-configuration2.version>
         <spring-social-security.version>1.1.6.RELEASE</spring-social-security.version>
         <spring-cloud-dependencies.version>Hoxton.SR3</spring-cloud-dependencies.version>
         <spring-cloud-alibaba-dependencies.version>2.2.0.RELEASE</spring-cloud-alibaba-dependencies.version>
@@ -179,13 +180,28 @@
             </dependency>
             <dependency>
                 <groupId>com.wyz.zeus</groupId>
-                <artifactId>zeus-db</artifactId>
+                <artifactId>zeus-log-spring-boot-starter</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.wyz.zeus</groupId>
-                <artifactId>zeus-log-spring-boot-starter</artifactId>
+                <artifactId>zeus-redis-spring-boot-starter</artifactId>
                 <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.wyz.zeus</groupId>
+                <artifactId>zeus-db-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.wyz.zeus</groupId>
+                <artifactId>zeus-common-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-configuration2</artifactId>
+                <version>${commons-configuration2.version}</version>
             </dependency>
             <!-- servlet -->
             <dependency>
