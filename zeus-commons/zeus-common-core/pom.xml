@@ -23,8 +23,17 @@
             <artifactId>opencsv</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+        </dependency>
+        <!--   easypoi   -->
+        <dependency>
             <groupId>cn.afterturn</groupId>
-            <artifactId>easypoi-spring-boot-starter</artifactId>
+            <artifactId>easypoi-base</artifactId>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>

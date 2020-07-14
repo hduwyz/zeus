@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.zeus.ribbon.RibbonAutoConfigure,\
+com.zeus.ribbon.FeignAutoConfigure,\
+com.zeus.ribbon.RestTemplateAutoConfigure,\
+com.zeus.ribbon.filter.LbIsolationFilter,\
+com.zeus.ribbon.LbIsolationAutoConfigure

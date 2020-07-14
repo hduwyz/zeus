@@ -19,6 +19,7 @@
         <module>zeus-redis-spring-boot-starter</module>
         <module>zeus-db-spring-boot-starter</module>
         <module>zeus-auth-client-spring-boot-starter</module>
+        <module>zeus-ribbo-spring-boot-starter</module>
     </modules>
 
 

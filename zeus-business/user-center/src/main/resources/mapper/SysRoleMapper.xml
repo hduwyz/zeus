@@ -23,14 +23,14 @@
 		</where>
 	</sql>
 
-	<select id="findList" resultType="com.central.common.model.SysRole">
+	<select id="findList" resultType="com.zeus.core.model.SysRole">
 		select <include refid="Column_List"/>
 		from sys_role t
 		<include refid="where" />
 		order by t.create_time desc
 	</select>
 
-	<select id="findAll" resultType="com.central.common.model.SysRole">
+	<select id="findAll" resultType="com.zeus.core.model.SysRole">
 		select <include refid="Column_List"/>
 		from sys_role
 		order by create_time desc

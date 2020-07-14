@@ -35,7 +35,7 @@
 		</where>
 	</sql>
 
-	<select id="findList" resultType="com.central.common.model.SysUser">
+	<select id="findList" resultType="com.zeus.core.model.SysUser">
 		select * from sys_user t
 		<include refid="where" />
 		order by t.id desc
