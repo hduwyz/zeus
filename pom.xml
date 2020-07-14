@@ -15,6 +15,7 @@
         <module>zeus-config</module>
         <module>zeus-eureka</module>
         <module>zeus-gateway</module>
+        <module>zeus-web</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -44,6 +45,8 @@
         <fastdfs-client.version>1.26.7</fastdfs-client.version>
         <shiro.redis.version>3.1.0</shiro.redis.version>
         <hutool.version>5.3.8</hutool.version>
+        <easyCaptcha.version>1.6.2</easyCaptcha.version>
+        <userAgent.version>1.21</userAgent.version>
         <redisson-starter.version>3.11.5</redisson-starter.version>
         <security-oauth2.version>2.3.8.RELEASE</security-oauth2.version>
         <commons-configuration2.version>2.7</commons-configuration2.version>
@@ -190,6 +193,11 @@
             </dependency>
             <dependency>
                 <groupId>com.wyz.zeus</groupId>
+                <artifactId>zeus-auth-client-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.wyz.zeus</groupId>
                 <artifactId>zeus-db-spring-boot-starter</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -250,6 +258,21 @@
                 <groupId>org.redisson</groupId>
                 <artifactId>redisson-spring-boot-starter</artifactId>
                 <version>${redisson-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-extension</artifactId>
+                <version>${mybatis-plus-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>eu.bitwalker</groupId>
+                <artifactId>UserAgentUtils</artifactId>
+                <version>${userAgent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.whvcse</groupId>
+                <artifactId>easy-captcha</artifactId>
+                <version>${easyCaptcha.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.zeus.oauth2.config.SecurityPropertiesConfig,\
+com.zeus.oauth2.store.AuthDbTokenStore,\
+com.zeus.oauth2.store.AuthRedisTokenStore,\
+com.zeus.oauth2.store.AuthJwtTokenStore,\
+com.zeus.oauth2.store.ResJwtTokenStore
