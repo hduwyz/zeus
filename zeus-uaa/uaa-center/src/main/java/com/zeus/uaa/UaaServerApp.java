@@ -9,7 +9,7 @@ import org.springframework.session.data.redis.config.annotation.web.http.EnableR
 
 
 
-@EnableFeignClients
+@EnableFeignClients(basePackages = {"com.zeus.core.feign"})
 @EnableFeignInterceptor
 @EnableDiscoveryClient
 @EnableRedisHttpSession
