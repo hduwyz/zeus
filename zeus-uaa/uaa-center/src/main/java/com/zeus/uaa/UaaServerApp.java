@@ -9,6 +9,7 @@ import org.springframework.session.data.redis.config.annotation.web.http.EnableR
 
 
 
+//@EnableFeignClients注解不会自动为外部引入的jar包中标注了@FeignClient注解的接口自动生成bean对象
 @EnableFeignClients(basePackages = {"com.zeus.core.feign"})
 @EnableFeignInterceptor
 @EnableDiscoveryClient
